@@ -3,16 +3,16 @@ package com.proyecto.proyectoFinal.model;
 import com.proyecto.proyectoFinal.entidad.TipoId;
 
 
-public class PersonaModelo {
+public class PersonaDTO {
     private int id;
     private TipoId tipoId;
     private String nombres;
     private String apellidos;
     private int edad;
     private String lugarNacimiento;
-    private ImagenModelo imagen;
+    private ImagenDTO imagen;
 
-    public PersonaModelo(int id, TipoId tipoId, String nombres, String apellidos, int edad, String lugarNacimiento, ImagenModelo imagen) {
+    public PersonaDTO(int id, TipoId tipoId, String nombres, String apellidos, int edad, String lugarNacimiento, ImagenDTO imagen) {
         this.id = id;
         this.tipoId = tipoId;
         this.nombres = nombres;
@@ -22,7 +22,7 @@ public class PersonaModelo {
         this.imagen = imagen;
     }
 
-    public PersonaModelo() {
+    public PersonaDTO() {
     }
 
     public int getId() {
@@ -73,17 +73,17 @@ public class PersonaModelo {
         this.lugarNacimiento = lugarNacimiento;
     }
 
-    public ImagenModelo getImagen() {
+    public ImagenDTO getImagen() {
         return imagen;
     }
 
-    public void setImagen(ImagenModelo imagen) {
+    public void setImagen(ImagenDTO imagen) {
         this.imagen = imagen;
     }
 
     @Override
     public String toString() {
-        return "PersonaModelo{" +
+        return "PersonaDTO{" +
                 "id=" + id +
                 ", tipoId=" + tipoId +
                 ", nombres='" + nombres + '\'' +

@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.Base64;
 
 
-public class ImagenModelo {
+public class ImagenDTO {
 
     private String base64;
 
@@ -29,10 +29,10 @@ public class ImagenModelo {
 
     }
 
-    public ImagenModelo() {
+    public ImagenDTO() {
     }
 
-    public ImagenModelo(String base64) {
+    public ImagenDTO(String base64) {
         this.base64 = base64;
     }
 
@@ -53,7 +53,7 @@ public class ImagenModelo {
 
     @Override
     public String toString() {
-        return "ImagenModelo{" +
+        return "ImagenDTO{" +
                 "base64='" + base64 + '\'' +
                 '}';
     }

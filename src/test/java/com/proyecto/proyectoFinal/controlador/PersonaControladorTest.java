@@ -2,8 +2,8 @@ package com.proyecto.proyectoFinal.controlador;
 
 import com.proyecto.proyectoFinal.document.Imagen;
 import com.proyecto.proyectoFinal.entidad.Persona;
-import com.proyecto.proyectoFinal.model.ImagenModelo;
-import com.proyecto.proyectoFinal.model.PersonaModelo;
+import com.proyecto.proyectoFinal.model.ImagenDTO;
+import com.proyecto.proyectoFinal.model.PersonaDTO;
 import com.proyecto.proyectoFinal.repository.ImagenRepositorio;
 import com.proyecto.proyectoFinal.repository.PersonaRepositorio;
 import com.proyecto.proyectoFinal.servicio.PersonaService;
@@ -19,11 +19,11 @@ class PersonaControladorTest {
     @Autowired
     PersonaService personaService;
     @Autowired
-    PersonaModelo personaModelo;
+    PersonaDTO personaDTO;
     @Autowired
     Optional<Persona> persona;
     @Autowired
-    ImagenModelo imagenModelo;
+    ImagenDTO imagenDTO;
     @Autowired
     Optional<Imagen> imagen;
 

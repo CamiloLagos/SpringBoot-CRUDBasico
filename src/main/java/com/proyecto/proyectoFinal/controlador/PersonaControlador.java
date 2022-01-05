@@ -1,12 +1,9 @@
 package com.proyecto.proyectoFinal.controlador;
 
-import com.proyecto.proyectoFinal.model.PersonaModelo;
+import com.proyecto.proyectoFinal.model.PersonaDTO;
 import com.proyecto.proyectoFinal.servicio.PersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class PersonaControlador {
@@ -21,14 +18,14 @@ public class PersonaControlador {
     }
      */
 
-    @RequestMapping(value = "create", method = RequestMethod.POST)
-    public String crearPersona(@RequestBody PersonaModelo personaModelo){
-        return personaService.crearPersona(personaModelo);
+    @PostMapping(value = "crear")
+    public String crearPersona(@RequestBody PersonaDTO personaDTO){
+        return personaService.crearPersona(personaDTO);
     }
 
     @RequestMapping(value = "buscar", method = RequestMethod.GET)
     public String buscarPersona(@RequestBody int id){
-        return personaService.buscarPersona(id);
+        return personaService.buscarPersona(id).toString();
     }
 
     @RequestMapping(value = "borrar", method = RequestMethod.DELETE)
