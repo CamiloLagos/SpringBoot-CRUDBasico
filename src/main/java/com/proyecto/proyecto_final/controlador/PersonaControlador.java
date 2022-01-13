@@ -1,7 +1,7 @@
-package com.proyecto.proyectoFinal.controlador;
+package com.proyecto.proyecto_final.controlador;
 
-import com.proyecto.proyectoFinal.model.PersonaDTO;
-import com.proyecto.proyectoFinal.servicio.PersonaService;
+import com.proyecto.proyecto_final.model.PersonaDTO;
+import com.proyecto.proyecto_final.servicio.PersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

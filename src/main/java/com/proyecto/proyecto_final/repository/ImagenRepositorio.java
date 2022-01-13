@@ -1,6 +1,6 @@
-package com.proyecto.proyectoFinal.repository;
+package com.proyecto.proyecto_final.repository;
 
-import com.proyecto.proyectoFinal.document.Imagen;
+import com.proyecto.proyecto_final.document.Imagen;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

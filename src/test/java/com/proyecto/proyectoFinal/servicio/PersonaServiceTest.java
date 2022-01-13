@@ -1,12 +1,13 @@
 package com.proyecto.proyectoFinal.servicio;
 
-import com.proyecto.proyectoFinal.document.Imagen;
-import com.proyecto.proyectoFinal.entidad.Persona;
-import com.proyecto.proyectoFinal.entidad.TipoId;
-import com.proyecto.proyectoFinal.model.ImagenDTO;
-import com.proyecto.proyectoFinal.model.PersonaDTO;
-import com.proyecto.proyectoFinal.repository.ImagenRepositorio;
-import com.proyecto.proyectoFinal.repository.PersonaRepositorio;
+import com.proyecto.proyecto_final.document.Imagen;
+import com.proyecto.proyecto_final.entidad.Persona;
+import com.proyecto.proyecto_final.entidad.TipoId;
+import com.proyecto.proyecto_final.model.ImagenDTO;
+import com.proyecto.proyecto_final.model.PersonaDTO;
+import com.proyecto.proyecto_final.repository.ImagenRepositorio;
+import com.proyecto.proyecto_final.repository.PersonaRepositorio;
+import com.proyecto.proyecto_final.servicio.PersonaService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -72,5 +73,6 @@ class PersonaServiceTest {
     void eliminarPersona() {
         when(personaRepositorio.getById(anyInt())).thenReturn(persona);
         when(imagenRepositorio.findById(anyInt())).thenReturn(imagen);
+        assertEquals("Persona eliminada!", personaService.eliminarPersona(1113695690));
     }
 }

@@ -1,4 +1,4 @@
-package com.proyecto.proyectoFinal.document;
+package com.proyecto.proyecto_final.document;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

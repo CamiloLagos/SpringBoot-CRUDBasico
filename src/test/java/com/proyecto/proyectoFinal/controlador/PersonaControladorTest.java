@@ -1,12 +1,13 @@
 package com.proyecto.proyectoFinal.controlador;
 
-import com.proyecto.proyectoFinal.document.Imagen;
-import com.proyecto.proyectoFinal.entidad.Persona;
-import com.proyecto.proyectoFinal.model.ImagenDTO;
-import com.proyecto.proyectoFinal.model.PersonaDTO;
-import com.proyecto.proyectoFinal.repository.ImagenRepositorio;
-import com.proyecto.proyectoFinal.repository.PersonaRepositorio;
-import com.proyecto.proyectoFinal.servicio.PersonaService;
+import com.proyecto.proyecto_final.controlador.PersonaControlador;
+import com.proyecto.proyecto_final.document.Imagen;
+import com.proyecto.proyecto_final.entidad.Persona;
+import com.proyecto.proyecto_final.model.ImagenDTO;
+import com.proyecto.proyecto_final.model.PersonaDTO;
+import com.proyecto.proyecto_final.repository.ImagenRepositorio;
+import com.proyecto.proyecto_final.repository.PersonaRepositorio;
+import com.proyecto.proyecto_final.servicio.PersonaService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

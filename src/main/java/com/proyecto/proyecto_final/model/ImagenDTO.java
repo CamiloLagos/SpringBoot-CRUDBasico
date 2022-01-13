@@ -1,6 +1,8 @@
-package com.proyecto.proyectoFinal.model;
+package com.proyecto.proyecto_final.model;
 
+import com.proyecto.proyecto_final.exception.GenericException;
 import org.apache.commons.io.IOUtils;
+import org.springframework.http.HttpStatus;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -17,16 +19,18 @@ public class ImagenDTO {
         InputStream is = null;
         try {
             is = new FileInputStream(base64);
-            byte[] arrayBytes = IOUtils.toByteArray(is);
-            this.base64 = Base64.getEncoder().encodeToString(arrayBytes);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            throw new GenericException("I-101","Error leyendo la imagen...", HttpStatus.BAD_REQUEST);
         }
 
+        byte[] arrayBytes = new byte[0];
+        try {
+            arrayBytes = IOUtils.toByteArray(is);
+        } catch (IOException e) {
+            throw new GenericException("I-100", "Error convirtiendo la imagen...", HttpStatus.BAD_REQUEST);
+        }
 
-
+        this.base64 = Base64.getEncoder().encodeToString(arrayBytes);
     }
 
     public ImagenDTO() {

@@ -1,6 +1,6 @@
-package com.proyecto.proyectoFinal.model;
+package com.proyecto.proyecto_final.model;
 
-import com.proyecto.proyectoFinal.entidad.TipoId;
+import com.proyecto.proyecto_final.entidad.TipoId;
 
 
 public class PersonaDTO {

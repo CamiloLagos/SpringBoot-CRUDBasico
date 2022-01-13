@@ -1,4 +1,4 @@
-package com.proyecto.proyectoFinal;
+package com.proyecto.proyecto_final;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

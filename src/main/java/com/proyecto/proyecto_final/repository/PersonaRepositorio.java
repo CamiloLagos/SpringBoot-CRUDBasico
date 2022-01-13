@@ -1,6 +1,6 @@
-package com.proyecto.proyectoFinal.repository;
+package com.proyecto.proyecto_final.repository;
 
-import com.proyecto.proyectoFinal.entidad.Persona;
+import com.proyecto.proyecto_final.entidad.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
